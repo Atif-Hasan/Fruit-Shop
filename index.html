@@ -15,7 +15,7 @@
 
     <section id="budget">
         <p>I have Rs.</p>
-        <input type="number" id="enter-value">
+        <input onmouseout="haveCash()" class="have-cash" id="enter-value" type="number" min="0">
     </section>
 
     <section id="total">
@@ -30,21 +30,21 @@
                 <img src="images/item-1.png" alt="apple">
                 <h5>Apple</h5>
                 <div class="pick">
-                    <button class="plus"><i class="fas fa-plus"></i></button>
+                    <button class="plus" onclick="addApple()"><i class="fas fa-plus"></i></button>
                     <input type="number" class="app-quantity" min="0" value="0">
-                    <button class="minus"><i class="fas fa-minus"></i></button>
+                    <button class="minus" onclick="minusApple()"><i class="fas fa-minus"></i></button>
                 </div>
             </div>
         </div>
         <div class="item-2">
             <h4>Rs. 15</h4>
             <div class="fruit-1">
-                <img src="images/item-2.png" alt="apple">
+                <img src="images/item-2.png" alt="orange">
                 <h5>Orange</h5>
                 <div class="pick">
-                    <button class="plus"><i class="fas fa-plus"></i></button>
+                    <button class="plus" onclick="addOrange()"><i class="fas fa-plus"></i></button>
                     <input type="number" class="org-quantity" min="0" value="0">
-                    <button class="minus"><i class="fas fa-minus"></i></button>
+                    <button class="minus" onclick="minusOrange()"><i class="fas fa-minus"></i></button>
                 </div>
             </div>
         </div>
@@ -52,12 +52,12 @@
         <div class="item-3">
             <h4>Rs. 7</h4>
             <div class="fruit-1">
-                <img src="images/item-3.png" alt="apple">
+                <img src="images/item-3.PNG" alt="banana">
                 <h5>Banana</h5>
                 <div class="pick">
-                    <button class="plus"><i class="fas fa-plus"></i></button>
+                    <button class="plus" onclick="addBanana()"><i class="fas fa-plus"></i></button>
                     <input type="number" class="ban-quantity" min="0" value="0">
-                    <button class="minus"><i class="fas fa-minus"></i></button>
+                    <button class="minus" onclick="minusBanana()"><i class="fas fa-minus"></i></button>
                 </div>
             </div>
         </div>
